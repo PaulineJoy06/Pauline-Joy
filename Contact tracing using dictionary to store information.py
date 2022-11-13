@@ -1,3 +1,6 @@
+print("**********PROGRAMMED BY:**********")
+print("*******Pauline Joy R. Mingo*******")
+
 #display menu
 print()
 print("==========M E N U==========")
