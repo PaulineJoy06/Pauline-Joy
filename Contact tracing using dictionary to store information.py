@@ -13,7 +13,6 @@ PersonalInfoDict = {
 }
 
 
-
 #display menu
 print()
 print("==========M E N U==========")
@@ -23,8 +22,12 @@ print("2 => Search")
 print("3 => Exit (y/n)")
 print()
 print("===========================")
+print()
 
-#Allow users to select item in the menu (check if valid)
+while True:
+    options = int(input("What do you want to do: 1, 2 or 3? "))
+
+#Allow users to select and add item in the menu (check if valid)
 
 #Perform the selected options
 
