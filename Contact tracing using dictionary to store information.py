@@ -34,23 +34,37 @@ while True:
     if options == 1:
         print("You must add an item")
 
+
+        print()
         name = input("Full Name: ")
         PersonalInfoDict["Full Name"] = name
 
+        print()
         age = input("Age:  ")
         PersonalInfoDict["Age"] = age
 
+        print()
         current_address = input("Current Address: ")
         PersonalInfoDict["Current Address: "] = current_address
 
+        print()
         contact_number = input("Contact Number: ")
         PersonalInfoDict["Contact Number"] = contact_number
 
+        print()
         vaccination_status = input("Vaccination Status: ")
         PersonalInfoDict["Vaccination Status: "] = vaccination_status
 
+        print()
+        print("Yay! Your personal information is saved and recorded!")
+        print()
 
-#Perform the selected options
+
+#Perform the selected options (search for an information)
+    elif options == 2:
+        print("You wish to search for an item")
+        
+
 
 
 
