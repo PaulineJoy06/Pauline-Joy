@@ -4,16 +4,15 @@ print("*******Pauline Joy R. Mingo*******")
 #Use dictionary to store the information, using full names as key and value is another dictionary of infos
 
 #display menu
-def menu():
-    print()
-    print("==========M E N U==========")
-    print()
-    print("1 => Add an item")
-    print("2 => Search")
-    print("3 => Exit (y/n)")
-    print()
-    print("===========================")
-    print()
+print()
+print("==========M E N U==========")
+print()
+print("1 => Add an item")
+print("2 => Search")
+print("3 => Exit the program")
+print()
+print("===========================")
+print()
 
 
 menu()
@@ -32,6 +31,7 @@ while True:
 
 #Allow users to select and add item in the menu (check if valid)
     if options == 1:
+        print()
         print("You must add an item")
 
 
@@ -62,8 +62,13 @@ while True:
 
 #Perform the selected options (search for an information)
     elif options == 2:
+        print()
         print("You wish to search for an item")
+        print()
+        print("")
         
+
+        1
 
 
 
