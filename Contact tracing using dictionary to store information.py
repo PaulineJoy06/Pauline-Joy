@@ -15,62 +15,48 @@ print("===========================")
 print()
 
 
-menu()
-PersonalInfoDict = {
-    "Full name": " ", 
-    "Age": " ", 
-    "Current Address": " ", 
-    "Contact Number": " ", 
-    "Vaccination Status": " ",
-
-}
-
 
 while True:
-    options = int(input("What do you want to do: 1, 2 or 3? "))
+    userInputFunct = int(input("What do you want to do: 1, 2 or 3? "))
 
-#Allow users to select and add item in the menu (check if valid)
-    if options == 1:
-        print()
-        print("You must add an item")
+#dictionary
+    contact = {}
 
+    #diplay first option (add an item/s)
+    if userInputFunct == 1:
 
-        print()
-        name = input("Full Name: ")
-        PersonalInfoDict["Full Name"] = name
+        print("You chose item 1, please state the required information.") 
+        name = input("Enter your full name: ")
+        age = int(input("Enter your age: "))
+        address = input("Enter your address: ")
+        contact_num = int(input("Enter your contact number: "))
+        vaccination_status = input("Enter your Vaccination status: ")
+        print("Yay! Your informations have been saved!")
 
-        print()
-        age = input("Age:  ")
-        PersonalInfoDict["Age"] = age
+    #display second option (search existing item/s)
+    elif userInputFunct == 2:
 
-        print()
-        current_address = input("Current Address: ")
-        PersonalInfoDict["Current Address: "] = current_address
+        #assigning keys and their corresponding values in the dictionary
+        contact["Full Name"] = name
+        contact["Age"] = age
+        contact["Address"] = address
+        contact["Contact Number"] = contact_num
+        contact["Vaccination Status"] = vaccination_status
+       
 
+        #user input for the viewing of record
+        full_name = input("Enter your full name: ")
+        print("Search result for: ", full_name)
         print()
-        contact_number = input("Contact Number: ")
-        PersonalInfoDict["Contact Number"] = contact_number
-
-        print()
-        vaccination_status = input("Vaccination Status: ")
-        PersonalInfoDict["Vaccination Status: "] = vaccination_status
-
-        print()
-        print("Yay! Your personal information is saved and recorded!")
-        print()
-
-
-#Perform the selected options (search for an information)
-    elif options == 2:
-        print()
-        print("You wish to search for an item")
-        print()
-        print("")
         
-
-        1
-
-
+        #nested if-else statement to compare if the entered data is exisiting 
+        if full_name in name:
+            for key in contact:
+                print(key, ":", contact[key])
+                print()
+        else: 
+            print("The data is not existing in the existing, check the entered input if correct")
+            print()
 
 
 
