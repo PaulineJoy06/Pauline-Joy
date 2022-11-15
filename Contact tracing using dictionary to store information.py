@@ -22,7 +22,7 @@ while True:
 #dictionary
     contact = {}
 
-    #diplay first option (add an item/s)
+#diplay Option  1 (add an item)
     if userInputFunct == 1:
 
         print()
@@ -41,7 +41,7 @@ while True:
         print("Yay! Your informations have been saved!")
         print()
 
-    #display second option (search existing item/s)
+#display Option 2 (search for an item)
     elif userInputFunct == 2:
 
         #assigning keys and their corresponding values in the dictionary
@@ -54,6 +54,7 @@ while True:
 
         #user input for the viewing of record
         full_name = input("Enter your full name: ")
+        print()
         print("Search result for: ", full_name)
         print()
         
@@ -63,8 +64,16 @@ while True:
                 print(key, ":", contact[key])
                 print()
         else: 
-            print("The data is not existing in the existing, check the entered input if correct")
+            print("The data is not existing. Please try again.")
             print()
+#display Option 3 (exit the program) 
+    elif userInputFunct == 3: 
+        exitVerification = input("Are you sure you want to exit the program? ")
+        if exitVerification == "Yes":
+            print ("THANK YOU FOR USING THIS PROGRAM!")
+            break
+        else:
+            continue
 
 
 
