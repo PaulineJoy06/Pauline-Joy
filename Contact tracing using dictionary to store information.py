@@ -25,13 +25,21 @@ while True:
     #diplay first option (add an item/s)
     if userInputFunct == 1:
 
-        print("You chose item 1, please state the required information.") 
+        print()
+        print("Please enter the needed information below.") 
+        print()
         name = input("Enter your full name: ")
+        print()
         age = int(input("Enter your age: "))
+        print()
         address = input("Enter your address: ")
+        print()
         contact_num = int(input("Enter your contact number: "))
+        print()
         vaccination_status = input("Enter your Vaccination status: ")
+        print()
         print("Yay! Your informations have been saved!")
+        print()
 
     #display second option (search existing item/s)
     elif userInputFunct == 2:
