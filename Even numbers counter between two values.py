@@ -14,8 +14,21 @@ while True:
         if (x%2) == 0:
             even = even +x
 
+    print()
     print("The starting and the ending number is: ", start, end)
+    print()
     print("The sum of evens are ", even)        
+    print()
+
+    yes = input("Would you like to run the program again? (y/n) ")
+    if yes == "y":
+        continue
+    else:
+        break
+    
+    
+print("Done :)")
+1
 
 
 
