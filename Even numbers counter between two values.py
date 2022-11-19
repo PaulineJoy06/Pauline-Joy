@@ -1,6 +1,10 @@
 print("**********PROGRAMMED BY:**********")
 print("*******Pauline Joy R. Mingo*******")
 
+print()
+
+#Create a program that that should first read in two values from the keyboard, a starting value and an ending value. 
+# It should sum all the even numbers between those two values including the endpoints and display the sum.
 
 #Variables
 
@@ -15,7 +19,7 @@ while True:
             even = even +x
 
     print()
-    print("The starting and the ending number is: ", start, end)
+    print("The starting and the ending number are: ", start, "and", end)
     print()
     print("The sum of evens are ", even)        
     print()
@@ -26,9 +30,10 @@ while True:
     else:
         break
     
-    
-print("Done :)")
-1
+print()   
+print("Done! Thank you for using this program.")
+print()
+
 
 
 
